@@ -1,0 +1,51 @@
+{
+    "name": "tyhpdef/codeception-codeception-impl",
+    "description": "Implementation package for tyhpdef/codeception-codeception. Require tyhpdef/codeception-codeception, not this package.",
+    "keywords": [
+        "dev",
+        "static analysis",
+        "internal"
+    ],
+    "type": "library",
+    "license": "Apache-2.0",
+    "version": "5.3.5.0",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "tyhp": {
+            "interopContractVersion": 1,
+            "php-version": ">=8.2",
+            "require": {
+                "tyhpdef/php": "@dev",
+                "tyhpdef/symfony-console": "@dev",
+                "tyhpdef/symfony-event-dispatcher": "@dev",
+                "tyhpdef/phpunit-phpunit": "@dev",
+                "tyhpdef/symfony-finder": "@dev",
+                "tyhpdef/php-http-httplug": "@dev"
+            },
+            "package": {
+                "include": [
+                    "./_tyhpdef/*.tyhpdef",
+                    "./_tyhpdef/extensions/*.tyhpdef"
+                ],
+                "overlay": [
+                    "./_tyhpdef/overlays/stubs/*.tyhpdef",
+                    "./_tyhpdef/overlays/*.tyhpdef"
+                ]
+            },
+            "public": "tyhpdef/codeception-codeception"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "codeception/codeception": "5.3.5"
+    },
+    "require-dev": {
+        "tyhpdef/php": "@dev",
+        "tyhpdef/symfony-console": "@dev",
+        "tyhpdef/symfony-event-dispatcher": "@dev",
+        "tyhpdef/phpunit-phpunit": "@dev",
+        "tyhpdef/symfony-finder": "@dev",
+        "tyhpdef/php-http-httplug": "@dev"
+    }
+}
